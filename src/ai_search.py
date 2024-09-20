@@ -29,10 +29,10 @@ def retrieve_documentation(
     results = search_client.search(
         search_text=question,
         vector_queries=[vector_query],
-        #query_type=QueryType.SEMANTIC,
-        #semantic_configuration_name="default",
-        #query_caption=QueryCaptionType.EXTRACTIVE,
-        #query_answer=QueryAnswerType.EXTRACTIVE,
+        query_type=QueryType.SEMANTIC,
+        semantic_configuration_name="default",
+        query_caption=QueryCaptionType.EXTRACTIVE,
+        query_answer=QueryAnswerType.EXTRACTIVE,
         top=3,
     )
 
